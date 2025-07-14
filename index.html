@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheezious Responsive Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .navbar {
+      background-color: #f8f9fa;
+      padding: 5px;
+    }
+    .nav-link {
+      margin: 15px;
+      background-color: gold;
+    }
+    .nav-link:hover {
+      background-color: gray;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      max-height: 700px;
+      object-fit: cover;
+      border: 1px solid gold;
+    }
+
+    .menu-card {
+      border: 1px solid gold;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 30px; /* Added space between menu items */
+    }
+    .menu-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px; /* Space below image */
+    }
+
+    .card img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .card-text {
+      font-weight: bold;
+      font-size: xx-large;
+      color: black;
+    }
+
+    .app-section {
+      background-color: #ffcc00;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px;
+      padding: 20px;
+      border-radius: 50px;
+      flex-wrap: wrap;
+    }
+    .app-section img {
+      max-width: 300px;
+    }
+
+    .cheezy-banner {
+      background: linear-gradient(to bottom right, white, gold);
+      padding: 40px;
+      text-align: center;
+    }
+    .subscribe-box {
+      margin-top: 30px;
+    }
+    .form-control {
+      padding: 20px;
+    }
+    .button .btn {
+      background-color: gold;
+    }
+    .button .btn:hover {
+      background-color: gray;
+    }
+    .footer-container {
+      text-align: center;
+    }
+
+    /* Tablet view (max-width: 992px) */
+    @media (max-width: 992px) {
+      .nav-link {
+        margin: 5px;
+        font-size: 1.2rem;
+        padding: 8px;
+      }
+
+      .navbar-brand {
+        font-size: 1.8rem;
+      }
+
+      .image {
+        max-height: 500px;
+      }
+
+      .card img {
+        height: 250px;
+      }
+
+      .card-text {
+        font-size: x-large;
+      }
+
+      .menu-card img {
+        height: 150px;
+      }
+
+      .app-section {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+      }
+
+      .app-section img {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Mobile view (max-width: 576px) */
+    @media (max-width: 576px) {
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+
+      .nav-link {
+        font-size: 1rem;
+        margin: 3px;
+        padding: 6px;
+      }
+
+      .image {
+        max-height: 300px;
+      }
+
+      .card img {
+        height: 180px;
+      }
+
+      .card-text {
+        font-size: large;
+      }
+
+      .menu-card img {
+        height: 120px;
+      }
+
+      .app-section h3 {
+        font-size: 1.3rem;
+      }
+
+      .app-section img {
+        max-width: 150px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <img class="img-fluid rounded" src="img/Cheezious img.jpg" height="40px" width="40px" />
+      <a class="navbar-brand fw-bold fs-1" href="#">Cheezious</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link fs-3 text-dark rounded" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3 text-dark rounded" href="#">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3 text-dark rounded" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br /><br />
+
+  <img class="image" src="img/webpage.png" alt="Cheezious Banner" />
+
+  <br /><br />
+
+  <div class="container my-5">
+    <h2 class="mb-4 fw-bold text-dark">Explore Menu</h2>
+    <br /><br />
+    <div class="row text-center">
+      <div class="col-md-3 col-sm-6">
+        <div class="menu-card rounded">
+          <img class="rounded" src="img/Bhook at the end.webp" alt="BHOOK KA THE END!" />
+          <p class="fs-3 text-dark mt-2">BHOOK KA THE END!</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="menu-card rounded">
+          <img class="rounded" src="img/Starters.webp" alt="STARTERS" />
+          <p class="fs-3 text-dark mt-2">STARTERS</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="menu-card rounded">
+          <img class="rounded" src="img/Somewhat Local.webp" alt="SOMEWHAT LOCAL" />
+          <p class="fs-3 text-dark mt-2">SOMEWHAT LOCAL</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="menu-card rounded">
+          <img class="rounded" src="img/Somewhat Sooper.webp" alt="SOMEWHAT SOOPER" />
+          <p class="fs-3 text-dark mt-2">SOMEWHAT SOOPER</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+
+  <div class="container my-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card shadow mb-4">
+          <img src="img/cheesy khushiyan.webp" class="card-img-top" alt="Cheezy Khushiyan" />
+          <div class="card-body">
+            <p class="card-text">Delivering Cheesy khushiyan</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow mb-4">
+          <img src="img/growing brand.webp" class="card-img-top" alt="Brand of Cheezy Hearts" />
+          <div class="card-body">
+            <p class="card-text">Fastest Growing Brand of the Year.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow mb-4">
+          <img src="img/made with fresh.webp" class="card-img-top" alt="Local Flavors" />
+          <div class="card-body">
+            <p class="card-text">Made with fresh, local ingredients and love.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+
+  <div class="app-section">
+    <img src="img/mobile app 1.jpeg" alt="Mobile App" />
+    <div>
+      <h3 class="fw-bold fs-1 text-dark">Download Our Mobile App</h3>
+      <p class="fw-bold fs-3 text-dark">Elevate your experience by downloading our mobile app for a seamless ordering experience.</p>
+      <div>
+        <img src="img/google-play-btn.png" alt="Google Play" style="width: 120px; margin-right: 10px;" />
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+
+  <div class="container mt-5">
+    <div class="cheezy-banner rounded">
+      <h4 class="fw-bold fs-1 text-danger">Special Offers & News</h4>
+      <p class="fs-3 text-dark">Subscribe now for news, promotions, and more delivered right to your inbox.</p>
+      <div class="subscribe-box">
+        <input type="email" class="form-control mb-3" placeholder="Enter Email Address" />
+        <button class="btn subscribe-button btn-block fs-3 text-dark">SUBSCRIBE</button>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="button text-center">
+      <button class="btn fs-3 text-white rounded">ORDER NOW</button>
+    </div>
+
+    <br /><br />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="fs-3 text-dark">Cheezious Copyright © 2025. All Rights Reserved.</p>
+        <ul class="list-unstyled">
+          <li class="fs-3 text-dark">Terms of service</li>
+          <li class="fs-3 text-dark">Privacy policy</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
